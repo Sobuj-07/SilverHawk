@@ -1,0 +1,135 @@
+.gallery_section .container{
+	max-width: 1140px;
+	margin: 0 auto;
+	padding-top: 80px;
+}
+.gallery_section .main_column{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 30px;
+	grid-row-gap: 30px;
+	padding-top: 10px;
+	padding-bottom: 80px;
+}
+
+.gallery_section img{
+	width: 100%;
+	display: block;
+}
+.gallery_section .caption img{
+	width: auto;
+	display: initial;
+}
+
+.gallery_section .flex_column{
+	position: relative;
+
+}
+.gallery_section .flex_column:after{
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	transition: .4s;
+}
+.gallery_section .flex_column:hover:after{
+	opacity: .6;
+}
+.gallery_section .caption {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    opacity: 0;
+    transition: .4s;
+    z-index: 1;
+}
+.gallery_section .flex_column:hover .caption{
+	opacity: 1;
+}
+.gallery_section h2{
+	font-size: 26px;
+	color: #fff;
+	font-weight: 700;
+}
+.gallery_section p{
+	color: #fff;
+	font-size: 17px;
+	font-style: italic;
+}
+.gallery_section h1 {
+    color: #000;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    padding-bottom: 80px;
+}
+.gallery_section h1:after {
+    position: absolute;
+    content: '';
+    background-image: url(image/S_logo.png);
+    width: 228px;
+    height: 20px;
+    background-size: 100%;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+}
+.gallery_section .button{
+	text-align: center;
+	padding-bottom: 65px;
+}
+.gallery_section .button a{
+	text-decoration: none;
+	border: 2px solid #173a69;
+	padding: 8px 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+    transition: .4s;
+}
+.gallery_section .button a:hover{
+	background-color: #173a69;
+	color: #fff;
+}
+
+
+
+
+.gallery_section {
+	width: 100%;
+}
+.gallery_section .container{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.gallery_section .main_column{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 30px;
+	grid-row-gap: 30px;
+}
+.gallery_section img{
+	width: 100%;
+
+}
+.gallery_section .flex_column{
+	position: relative;
+}
+.gallery_section .caption{
+    content: '';
+	position: absolute;
+	top: 0;
+}
+.gallery_section .caption img{
+	width: auto;
+}
